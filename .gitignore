@@ -1,0 +1,21 @@
+# CAN recordings — large + personal; keep them out of git
+*.csv
+data/
+decoded_*/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Local artifacts
+/tmp/
+*.log

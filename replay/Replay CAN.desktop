@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Replay CAN
+Comment=Pick a CSV from ~/Desktop/data and replay it onto vcan0
+Exec=bash -c 'python3 /home/sterling/can_replay_gui.py'
+Icon=utilities-terminal
+Terminal=false
+StartupNotify=false
