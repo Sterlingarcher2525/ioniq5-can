@@ -1,0 +1,521 @@
+BO_ 53 FRONT_MOTOR_RPM_MSG: 8 1
+ SG_ NEW_SIGNAL_2 : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 120|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 54 VCU_01_10ms_1: 8 XXX
+ SG_ NEW_SIGNAL_1 : 0|17@1+ (1,0) [0|1023] "" XXX
+ SG_ CURRENT_GEAR : 34|3@0+ (1,0) [0|7] "" XXX
+
+BO_ 55 VCU_01_10ms_2: 8 XXX
+ SG_ NEW_SIGNAL_1 : 8|8@1+ (1,0) [0|255] "" XXX
+ SG_ FRONT_MOTOR_CLUTCH_STATUS : 24|1@1+ (1,0) [0|1] "" XXX
+ SG_ NEW_SIGNAL_2 : 33|7@1+ (1,0) [0|127] "" XXX
+ SG_ NEW_SIGNAL_3 : 56|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 74 methinks_lateral_and_longitudinal_force: 32 XXX
+ SG_ Yaw_rate : 64|16@1+ (0.001,0) [0|65535] "" XXX
+ SG_ Lateral_acceleration : 80|16@1+ (0.001,0) [0|65535] "" XXX
+ SG_ Longitudinal_acceleration : 96|16@1+ (0.001,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_5 : 192|16@1+ (0.001,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_6 : 208|16@1+ (0.001,0) [0|65535] "" XXX
+
+BO_ 85 BMU_STATUS: 32 XXX
+ SG_ Cell_Voltage_Group_A : 64|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_Voltage_Group_B : 80|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ SOH : 120|8@1+ (1,0) [0|100] "%" XXX
+
+BO_ 97 ESC_01_10ms_1: 8 XXX
+
+BO_ 98 ESC_01_10ms_2: 8 XXX
+ SG_ TRAC_CTRL_STATUS : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ TRAC_SABIL_ASSIST_STATUSS : 9|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 100 ESC_01_10ms_4: 8 XXX
+ SG_ AUTO_HOLD_STATUS : 28|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 101 Brake_Pedal: 8 1
+ SG_ brake_pedal_pos : 40|16@1+ (1,0) [0|255] "" XXX
+
+BO_ 160 NEW_MSG_A0: 24 1
+ SG_ wheel_speed_1 : 64|16@1+ (0.25,0) [0|65535] "rpm" XXX
+ SG_ wheel_speed_2 : 80|16@1+ (0.25,0) [0|65535] "rpm" XXX
+ SG_ wheel_speed_3 : 96|16@1+ (0.25,0) [0|65535] "rpm" XXX
+ SG_ wheel_speed_4 : 112|16@1+ (0.25,0) [0|65535] "rpm" XXX
+
+BO_ 161 WHL_01_10ms_1: 8 XXX
+ SG_ NEW_SIGNAL_2 : 16|15@1+ (1,0) [0|32767] "" XXX
+ SG_ NEW_SIGNAL_1 : 40|16@1+ (1,0) [0|65535] "" XXX
+
+BO_ 162 WHL_01_10ms_2: 8 XXX
+ SG_ Motor_RPM : 0|16@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_3 : 16|16@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_4 : 32|16@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_2 : 48|16@1+ (1,0) [0|65535] "" XXX
+
+BO_ 199 Toggle_Battery_Preconditioning: 8 XXX
+ SG_ Battery_Preconditioning_0 : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ Battery_Preconditioning_1 : 32|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 218 NEW_MSG_DA: 24 1
+ SG_ NEW_SIGNAL_1 : 64|16@1+ (1,0) [0|65535] "" XXX
+ SG_ regenmayebe : 96|16@1- (1,0) [0|65535] "" XXX
+
+BO_ 234 STEERING: 24 1
+ SG_ Driver_Torque_Sensor : 64|12@1- (1,-2048) [-2048|2047] "" XXX
+ SG_ Steering_angle : 128|16@1- (0.25,0) [720|720] "deg" XXX
+
+BO_ 245 NEW_MSG_F5: 32 1
+ SG_ NEW_SIGNAL_1 : 48|16@1- (0.01,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_2 : 72|16@1- (0.01,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_3 : 144|16@1- (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_4 : 176|16@1+ (1,0) [0|65535] "" XXX
+
+BO_ 266 REAR_MOTOR: 32 2
+ SG_ rear_motor_rpm : 24|16@1- (1,0) [-1000|24000] "" XXX
+ SG_ Rear_Inverter_Temp : 96|8@1+ (1,0) [0|150] "degC" XXX
+ SG_ Rear_Motor_Temp : 104|8@1+ (1,0) [0|150] "degC" XXX
+ SG_ SOC_BMS : 120|8@1+ (0.5,0) [0|100] "%" XXX
+
+BO_ 267 MCU_01_10ms_1: 8 XXX
+
+BO_ 269 MCU_01_10ms_3: 8 XXX
+
+BO_ 273 UNKNOWN_111: 8 XXX
+
+BO_ 282 maybe_warning: 16 XXX
+
+BO_ 288 FRONT_MOTOR: 32 2
+ SG_ Motor_RPM : 24|16@1- (1,0) [-500|9000] "rpm" XXX
+ SG_ NEW_SIGNAL_1 : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ MAYBE_CLUTCH : 48|2@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_4 : 88|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 96|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 112|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_5 : 128|8@1+ (1,0) [0|255] "" XXX
+ SG_ FRONT_MOTOR_DRIVE_MODE : 160|8@1+ (1,0) [0|255] "" XXX
+ SG_ FRONT_MOTOR_SPORT_FLAG : 164|1@1+ (1,0) [0|1] "" XXX
+ SG_ NEW_SIGNAL_6 : 232|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_7 : 240|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_8 : 248|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 289 MCU_02_10ms_1: 8 XXX
+
+BO_ 291 MCU_02_10ms_3: 8 XXX
+ SG_ NEW_SIGNAL_1 : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 16|16@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_3 : 48|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 292 MCU_02_10ms_4: 8 XXX
+
+BO_ 293 Qaccel_dependent: 16 1
+ SG_ KWQ : 32|16@1+ (1,0) [0|65535] "" XXX
+
+BO_ 299 ADAS_CMD_30_10ms_1: 8 XXX
+
+BO_ 373 NEW_MSG_175: 24 XXX
+ SG_ NEW_SIGNAL_1 : 32|16@1+ (1,0) [0|65535] "" XXX
+
+BO_ 416 radar_cruiz: 32 XXX
+ SG_ vehicle_ahead_distance : 24|8@1- (0.5,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_2 : 32|8@1- (0.5,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_7 : 40|8@1- (0.5,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 64|8@1+ (1,0) [0|255] "" XXX
+ SG_ speed_setpoint : 96|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_8 : 104|8@1+ (1,0) [0|255] "" XXX
+ SG_ only_changes_when_moving : 152|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_6 : 168|8@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_1 : 176|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_4 : 192|8@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_9 : 200|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 419 ADAS_CMD_20_20ms_3: 8 XXX
+ SG_ DRIVE_MODE : 24|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 426 NEW_MSG_1AA: 16 XXX
+ SG_ NEW_SIGNAL_3 : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_4 : 8|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_5 : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 64|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 437 NEW_MSG_1B5: 32 XXX
+ SG_ NEW_SIGNAL_2 : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 25|7@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 32|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_4 : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_5 : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_6 : 64|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_7 : 72|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 463 NEW_MSG_1CF: 8 XXX
+ SG_ steering_wheel_cruise_control_button_states : 16|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 497 EPB_01_50ms_1: 8 XXX
+ SG_ PARK_BRAKE_SW_PULLED : 42|1@0+ (1,0) [0|1] "" XXX
+ SG_ PARK_BRAKE_SW_PUSHED : 43|1@0+ (1,0) [0|1] "" XXX
+ SG_ PARK_BRAKE_STATUS : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 512 ADAS_CMD_21_50ms: 8 XXX
+
+BO_ 533 BMU_CELL_VOLTAGES: 32 XXX
+ SG_ Cell_Group_Index : 32|8@1+ (1,0) [0|255] "" XXX
+ SG_ Cell_V_01 : 56|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_02 : 72|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_03 : 88|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_04 : 104|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_05 : 120|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_06 : 136|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_07 : 152|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_08 : 168|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_09 : 184|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_10 : 200|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_11 : 216|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+ SG_ Cell_V_12 : 232|16@1+ (0.001,0) [2.5|4.5] "V" XXX
+
+BO_ 551 CLU_02_100ms_2: 8 XXX
+ SG_ NEW_SIGNAL_2 : 8|16@1+ (1,0) [0|65535] "" XXX
+ SG_ DRIVE_MODE : 42|3@0+ (1,0) [0|7] "" XXX
+
+BO_ 592 NEW_MSG_250: 24 XXX
+ SG_ NEW_SIGNAL_3 : 120|16@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_2 : 160|16@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_1 : 168|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 599 LDC_01_100ms_2: 8 XXX
+ SG_ NEW_SIGNAL_2 : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 56|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 685 VCU_04_100ms_3: 8 XXX
+ SG_ Battery_Precond_State : 8|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 693 Throttle_Pos: 8 XXX
+ SG_ throttle_pos : 48|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 704 NEW_MSG_2C0: 32 XXX
+ SG_ NEW_SIGNAL_1 : 88|8@1- (0.1,0) [0|65535] "" XXX
+
+BO_ 706 UNKNOWN_2C2: 8 XXX
+
+BO_ 746 FRONT_MOTOR_CLUTCH: 32 XXX
+ SG_ Front_Motor_Connection_State : 32|8@1+ (1,0) [0|255] "" XXX
+ SG_ Front_Motor_Torque_Cmd : 64|16@1- (1,0) [-32768|32767] "" XXX
+
+BO_ 762 NEW_MSG_2FA: 32 XXX
+ SG_ Motor_phase_currentdunno : 64|16@1- (1,500) [-30000|30000] "" XXX
+
+BO_ 775 MCU_09_1000ms_2: 32 XXX
+ SG_ Front_Axle_Speed : 40|16@1+ (1,0) [0|65535] "" XXX
+ SG_ Rear_Axle_Speed : 56|16@1+ (1,0) [0|65535] "" XXX
+ SG_ Clutch_State : 120|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 864 NEW_MSG_360: 32 XXX
+
+BO_ 928 TPMS_BROADCAST: 16 XXX
+ SG_ Tire_Pressure_Front_Right : 32|8@1+ (1,0) [0|120] "psi" XXX
+ SG_ Tire_Pressure_Front_Left : 40|8@1+ (1,0) [0|120] "psi" XXX
+ SG_ Tire_Pressure_Back_Right : 48|8@1+ (1,0) [0|120] "psi" XXX
+ SG_ Tire_Pressure_Back_Left : 56|8@1+ (1,0) [0|120] "psi" XXX
+ SG_ NEW_SIGNAL_1 : 64|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1041 ICU_02_200ms: 8 XXX
+
+BO_ 1048 ICU_08_200ms: 8 XXX
+ SG_ Steering_Wheel_Heating_State : 16|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1049 ICU_09_200ms: 8 XXX
+ SG_ NEW_SIGNAL_3 : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|16@1+ (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_2 : 40|16@1+ (1,0) [0|65535] "" XXX
+
+BO_ 1053 HEATER_CTRL: 8 XXX
+ SG_ NEW_SIGNAL_1 : 34|1@0+ (1,0) [0|7] "" XXX
+ SG_ heater_ui_toggle_pressed : 35|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1077 VEH_SPEED: 8 XXX
+ SG_ Real_Vehicle_Speed : 56|8@1+ (1,0) [0|200] "km/h" XXX
+
+BO_ 1080 RearLeft_Seat_Heating: 8 XXX
+ SG_ RearLeft_Seat_Heating_State : 0|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1096 Steering_Wheel_Buttons: 8 XXX
+ SG_ Steering_Wheel_Other_Button : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ Steering_Wheel_Star_Button : 40|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1107 RearRight_Seat_Heating: 8 XXX
+ SG_ RearRight_Seat_Heating_State : 0|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1109 AMBIENT_LIGHT: 8 XXX
+ SG_ RED : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ GRN : 8|8@1+ (1,0) [0|255] "" XXX
+ SG_ BLU : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ byte3_palette_sector : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ unused_byte4 : 32|8@1+ (1,0) [0|255] "" XXX
+ SG_ unused_byte5 : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ unused_byte6 : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ unused_byte7 : 56|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1109_BRIGHTNESS_CTRL: 8 XXX
+ SG_ byte0 : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ byte1 : 8|8@1+ (1,0) [0|255] "" XXX
+ SG_ byte2 : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ byte3_always_0xA0 : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ brightness_level : 32|8@1+ (1,0) [0|5] "" XXX
+ SG_ byte5_unused : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ byte6_unused : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ byte7_unused : 56|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1125 CLIMATE_CTRL: 8 XXX
+ SG_ NEW_SIGNAL_2 : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 16|1@0+ (1,0) [0|16777215] "" XXX
+
+BO_ 1141 Passenger_Seat_Heating: 8 XXX
+ SG_ Passenger_Seat_Heating_State : 0|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1174 Drv_SHVU_01_200ms: 8 XXX
+ SG_ Driver_Seat_Heating_State : 0|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1183 AC_CTRL: 8 XXX
+ SG_ AC_ui_toggle_pressed : 47|1@0+ (1,0) [3|7] "" XXX
+
+BO_ 1261 Navigation_Precond_Status: 8 XXX
+ SG_ Distance_To_Charger_1 : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ Distance_To_Charger_2 : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ Precond : 56|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1264 UNKNOWN_4F0: 8 XXX
+
+BO_ 1617 INFOTAINMENT: 8 XXX
+ SG_ NEW_SIGNAL_1 : 9|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 1618 STEERING_BTNS: 8 XXX
+ SG_ media_button_pressed : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ nav_button_pressed : 5|1@0+ (1,0) [0|1] "" XXX
+ SG_ map_button_pressed : 6|1@0+ (1,0) [0|3] "" XXX
+ SG_ map_button_pressed_on_different_screen_set_display_to_map : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ flap_button_down : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ flap_button_up : 26|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1848 ADAS: 8 XXX
+ SG_ Front_right_wheel_speed : 56|16@1+ (0.03125,0) [0|100] "" XXX
+ SG_ Front_left_wheel_speed : 72|16@1+ (0.03125,0) [0|100] "" XXX
+ SG_ Rear_right_wheel_speed : 88|16@1+ (0.03125,0) [0|100] "" XXX
+ SG_ Rear_left_wheel_speed : 104|16@1+ (0.03125,0) [0|100] "" XXX
+ SG_ Steering_angle : 120|16@1- (0.1,0) [0|100] "" XXX
+ SG_ Lateral_acceleration : 136|16@1+ (0.000127473868925002,0) [0|100] "" XXX
+ SG_ Longitudinal_acceleration : 152|16@1+ (0.000127473868925002,0) [0|100] "" XXX
+ SG_ Yaw_rate : 168|8@1+ (0.005,0) [0|100] "" XXX
+
+BO_ 1868 CHARGE_MGMT: 8 XXX
+ SG_ Charging_socket_connected : 57|1@1+ (1,0) [0|100] "" XXX
+ SG_ Battery_main_relay_status : 58|1@1+ (1,0) [0|100] "" XXX
+ SG_ _400V_Relay_On_Off_request : 68|1@1+ (1,0) [0|100] "" XXX
+ SG_ _400V_Relay_Status : 69|1@1+ (1,0) [0|100] "" XXX
+ SG_ CP_voltage : 72|8@1+ (0.1,0) [0|100] "" XXX
+ SG_ CP_duty_cycle : 87|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ DC_Inlet_Temperature_1 : 88|8@1+ (1,-50) [0|100] "" XXX
+ SG_ DC_Inlet_Temperature_2 : 96|8@1+ (1,-50) [0|100] "" XXX
+ SG_ EVSE_Maximum_Voltage_Value : 103|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ AC_Inlet_temperature_1 : 104|8@1+ (1,-50) [0|100] "" XXX
+ SG_ PD_voltage : 119|16@0+ (0.001,0) [0|100] "" XXX
+ SG_ HV_Battery_Voltage : 135|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ HV_Battery_SoC : 144|8@1+ (0.5,0) [0|100] "" XXX
+ SG_ EVSE_Minimum_Current_Value : 151|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ EVSE_Target_Voltage : 159|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ AC_Charging_state : 162|1@1+ (1,0) [0|100] "" XXX
+ SG_ DC_Charging_state : 163|1@1+ (1,0) [0|100] "" XXX
+ SG_ EVSE_Output_Voltage : 167|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ EVSE_Target_Current : 175|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_Charging_DC_Voltage : 183|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ EV_Max_Voltage : 191|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_Charging_DC_Current : 199|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ EVSE_Current_regulation_tolerance_Value : 200|8@1+ (1,-50) [0|100] "" XXX
+ SG_ EV_Max_Current : 207|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_Charging_AC_Current : 215|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ BMS_Target_voltage : 223|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_Charging_AC_Voltage : 224|8@1+ (1,0) [0|100] "" XXX
+ SG_ EVSE_Maximum_Power_value : 231|16@0+ (10,0) [0|100] "" XXX
+ SG_ OBC_Discharging_DC_Current : 232|8@1+ (1,0) [0|100] "" XXX
+ SG_ BMS_Target_current : 239|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_Discharging_AC_Current : 240|8@1+ (1,0) [0|100] "" XXX
+ SG_ Estimated_charging_power : 255|16@0+ (10,0) [0|100] "" XXX
+ SG_ AC_Charging_Counter : 271|16@0+ (1,0) [0|100] "" XXX
+ SG_ DC_Charging_counter : 287|16@0+ (1,0) [0|100] "" XXX
+ SG_ AC_Charging_Time : 303|16@0+ (1,0) [0|100] "" XXX
+ SG_ Cumulative_DC_Charging_time : 319|16@0+ (1,0) [0|100] "" XXX
+ SG_ AC_Charger_current : 335|16@0+ (0.01,0) [0|100] "" XXX
+ SG_ DC_Charger_current_capability : 351|16@0+ (0.01,0) [0|100] "" XXX
+ SG_ AC_Charging_Time_after_plug_in : 367|16@0+ (1,0) [0|100] "" XXX
+ SG_ DC_Charging_time_after_plug_in : 383|16@0+ (1,0) [0|100] "" XXX
+
+BO_ 1912 BODY_CTRL: 8 XXX
+ SG_ Brake_light : 56|8@1+ (1,0) [0|100] "" XXX
+ SG_ Low_beams : 72|8@1+ (1,0) [0|100] "" XXX
+
+BO_ 1960 TIRE_PRESSURE_OBD: 48 XXX
+
+BO_ 1979 HVAC: 8 XXX
+ SG_ Coolant_temperature_1 : 56|8@1+ (0.5,-40) [0|100] "" XXX
+ SG_ Indoor_Temperature : 64|8@1+ (0.5,-40) [-50|50] "" XXX
+ SG_ Outdoor_Temperature : 72|8@1+ (0.5,-40) [-50|50] "" XXX
+ SG_ Evaporator_Temperature : 80|8@1+ (0.5,-40) [-50|50] "" XXX
+ SG_ Interior_temperature_passenger_vent : 88|8@1+ (0.5,-40) [0|100] "" XXX
+ SG_ Interior_temperature_passenger_legs_vent : 96|8@1+ (0.5,-40) [0|100] "" XXX
+ SG_ Inverter_temperature : 120|8@1+ (1,0) [-40|100] "" XXX
+ SG_ Humidity_sensor_for_automatic_defogger : 224|8@1+ (1,0) [0|100] "" XXX
+ SG_ Interior_temperature_driver_vent : 240|8@1+ (0.5,-40) [0|100] "" XXX
+ SG_ Interior_temperature_driver_legs_vent : 248|8@1+ (0.5,-40) [0|100] "" XXX
+ SG_ Real_Vehicle_Speed : 256|8@1+ (1,0) [0|200] "" XXX
+
+BO_ 1998 DASHBOARD: 8 XXX
+ SG_ Odometer : 87|16@0+ (1,0) [0|16777215] "" XXX
+ SG_ DASH_2025_Odometer : 111|16@0+ (1,0) [0|16777215] "" XXX
+
+BO_ 2009 ABS: 8 XXX
+ SG_ Front_left_wheel_speed_1 : 104|8@1+ (1,0) [0|100] "" XXX
+ SG_ Front_right_wheel_speed_1 : 112|8@1+ (1,0) [0|100] "" XXX
+ SG_ Rear_left_wheel_speed_1 : 120|8@1+ (1,0) [0|100] "" XXX
+ SG_ Rear_right_wheel_speed_1 : 128|8@1+ (1,0) [0|100] "" XXX
+
+BO_ 2012 POWER_STEERING: 8 XXX
+ SG_ Absolute_wheels_turn_angle : 87|16@0- (0.1,0) [0|100] "" XXX
+ SG_ MDPS_motor_current : 112|8@1- (1,0) [0|100] "" XXX
+
+BO_ 2016 MY2023_VCU_7E0: 8 XXX
+
+BO_ 2017 MY2023_EPCU_7E1: 8 XXX
+
+BO_ 2019 MY2023_BMS_7E3: 8 XXX
+
+BO_ 2020 MY2023_MCU_7E4: 8 XXX
+
+BO_ 2022 MY2023_ECU_7E6: 8 XXX
+
+BO_ 2026 VCS: 8 XXX
+ SG_ Disconnector_Stroke_Position : 56|16@1+ (0.0078125,0) [0|100] "" XXX
+ SG_ Disconnector_Meet_Point : 72|16@1+ (0.0078125,0) [0|100] "" XXX
+ SG_ Accelerator_pedal_position : 88|16@1+ (0.0019531,0) [0|100] "" XXX
+ SG_ Disconnector_Disengage_Last_Time : 104|8@1+ (1,0) [0|100] "" XXX
+ SG_ Aux_battery_voltage : 120|16@1+ (0.0004883,0) [0|100] "" XXX
+ SG_ Disconnector_Actuator_Motor_Current : 120|8@1- (2,0) [0|100] "" XXX
+ SG_ Disconnector_Inverter_PWM_Duty : 128|16@1- (0.0078125,0) [0|100] "" XXX
+ SG_ Disconnector_Zero_Count_Offset : 144|16@1- (1,0) [0|100] "" XXX
+
+BO_ 2027 MOTOR_CTRL: 8 XXX
+ SG_ EWP_Current_DC : 80|8@1+ (0.1,0) [0|100] "" XXX
+ SG_ EWP_Voltage_DC : 88|8@1+ (0.1,0) [0|100] "" XXX
+ SG_ EWP_Commanded_Rotation_Speed : 112|8@1+ (24,0) [0|100] "" XXX
+ SG_ EWP_Actual_Rotation_Speed : 120|8@1+ (24,0) [0|100] "" XXX
+ SG_ EOP_Actual_Speed : 136|8@1+ (20,0) [0|100] "" XXX
+ SG_ IGN_Voltage : 144|16@1+ (0.001,0) [0|100] "" XXX
+ SG_ Motor_RPM : 160|16@1- (1,0) [0|100] "" XXX
+ SG_ EOP_Commanded_Speed : 176|8@1+ (20,0) [0|100] "" XXX
+ SG_ Nominal_torque_value : 176|16@1- (0.1,0) [0|100] "" XXX
+ SG_ Motor_Actual_Torque : 192|16@1- (0.1,0) [0|100] "" XXX
+ SG_ EOP_Current_DC : 200|8@1+ (1,0) [0|100] "" XXX
+ SG_ EOP_Current_IQ : 208|8@1+ (1,0) [0|100] "" XXX
+ SG_ Motor_phase_current : 208|16@1+ (0.1,0) [0|100] "" XXX
+ SG_ MCU_2025_Motor_temperature : 216|16@1- (0.01,0) [0|100] "" XXX
+ SG_ Motor_temperature : 224|16@1- (0.01,0) [0|100] "" XXX
+ SG_ Inverter_temperature_1 : 240|16@1- (0.01,0) [0|100] "" XXX
+ SG_ Heat_sink_temperature : 472|16@1- (0.01,0) [0|100] "" XXX
+
+BO_ 2028 BATTERY_MGMT: 8 XXX
+ SG_ Battery_management : 24|8@1+ (1,0) [0|15] "" XXX
+ SG_ State_of_Charge_BMS : 56|8@1+ (0.5,0) [0|100] "" XXX
+ SG_ Number_of_standard_charging : 79|16@0+ (1,0) [0|100] "" XXX
+ SG_ Battery_Fan_Duty_Feedback : 88|8@1+ (1,0) [0|120] "" XXX
+ SG_ BMS_Main_Relay : 96|1@1+ (1,0) [0|1] "" XXX
+ SG_ Normal_Charge_Port : 101|1@1+ (1,0) [0|1] "" XXX
+ SG_ Rapid_Charge_Port : 102|1@1+ (1,0) [0|1] "" XXX
+ SG_ HV_Charging : 103|1@1+ (1,0) [0|1] "" XXX
+ SG_ Number_of_quick_charging : 111|16@0+ (1,0) [0|100] "" XXX
+ SG_ DATC_A_C_Compressor_operation_RPM_var_1 : 120|8@1+ (20,0) [0|100] "" XXX
+ SG_ Battery_DC_Voltage : 127|16@0+ (0.1,0) [268.8|403.2] "" XXX
+ SG_ Battery_Max_Temperature : 136|8@1- (1,0) [-40|80] "" XXX
+ SG_ Accumulated_normal_charging_energy : 143|16@0+ (1,0) [0|100] "" XXX
+ SG_ Battery_Min_Temperature : 144|8@1- (1,0) [-40|80] "" XXX
+ SG_ Available_Charge_Power : 159|16@0+ (0.01,0) [0|255] "" XXX
+ SG_ Accumulated_quick_charging_energy : 175|16@0+ (1,0) [0|100] "" XXX
+ SG_ Battery_Cell_Voltage_Deviation : 184|8@1+ (0.02,0) [0|0.5] "" XXX
+ SG_ Airbag_H_wire_Duty : 200|8@1+ (1,0) [50|100] "" XXX
+ SG_ Battery_Heater_1_Temperature : 208|8@1- (1,0) [0|80] "" XXX
+ SG_ Maximum_Cell_Voltage_No : 216|8@1+ (1,0) [0|98] "" XXX
+ SG_ Minimum_Cell_Voltage : 224|8@1+ (0.02,0) [2.8|4.2] "" XXX
+ SG_ State_of_Health : 231|16@0+ (1,0) [0|100] "" XXX
+ SG_ Minimum_Cell_Voltage_No : 232|8@1+ (1,0) [0|98] "" XXX
+ SG_ DATC_A_C_Compressor_operation_RPM_var_2 : 239|16@0+ (20,0) [0|100] "" XXX
+ SG_ Maximum_Deterioration_Cell_No : 240|8@1+ (1,0) [0|98] "" XXX
+ SG_ Battery_Fan_Feedback : 248|8@1+ (1,0) [0|120] "" XXX
+ SG_ Minimum_Deterioration : 255|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ Auxillary_Battery_Voltage : 256|8@1+ (0.1,0) [11|14.6] "" XXX
+ SG_ Minimum_Deterioration_Cell_No : 264|8@1+ (1,0) [0|98] "" XXX
+ SG_ State_of_Charge_Display : 272|8@1+ (0.5,0) [0|100] "" XXX
+ SG_ Cumulative_Charge_Current : 287|16@0+ (0.1,0) [0|1000000] "" XXX
+ SG_ Cumulative_Discharge_Current : 319|16@0+ (0.1,0) [0|1000000] "" XXX
+ SG_ Cumulative_Energy_Charged : 351|16@0+ (0.1,0) [0|1000000] "" XXX
+ SG_ Cumulative_Energy_Discharged : 383|16@0+ (0.1,0) [0|1000000] "" XXX
+ SG_ Battery_work_time_total : 415|16@0+ (1,0) [0|100] "" XXX
+ SG_ BMS_Ignition : 426|1@1+ (1,0) [0|1] "" XXX
+ SG_ Inverter_Capacitor_Voltage : 439|16@0+ (1,0) [0|500] "" XXX
+ SG_ Drive_Motor_Speed_1 : 455|16@0- (1,0) [-10100|10100] "" XXX
+ SG_ Drive_Motor_Speed_2 : 471|16@0- (1,0) [-10100|10100] "" XXX
+ SG_ Isolation_Resistance : 487|16@0+ (1,0) [0|1000] "" XXX
+
+BO_ 2029 OBC: 8 XXX
+ SG_ OBC_AC_Voltage_A : 63|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_AC_Voltage_B : 79|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_Charge_Mode_DC_Target_Voltage : 95|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ ICCU_2025_LDC_Temperature : 96|8@1+ (1,-100) [0|100] "" XXX
+ SG_ OBC_AC_Frequency : 104|8@1+ (1,0) [0|100] "" XXX
+ SG_ ICCU_2025_LDC_Output_Voltage : 111|16@0+ (1,0) [0|100] "" XXX
+ SG_ OBC_AC_Total_Current : 119|16@0- (0.01,0) [0|100] "" XXX
+ SG_ ICCU_2025_LDC_Output_Current : 127|16@0+ (0.01,0) [0|100] "" XXX
+ SG_ OBC_AC_Current_A : 135|16@0- (0.01,0) [0|100] "" XXX
+ SG_ VCMS_Discharge_Mode_AC_Target_Voltage : 136|8@1+ (1,0) [0|100] "" XXX
+ SG_ ICCU_2025_LDC_Input_Voltage : 143|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ OBC_AC_Current_B : 151|16@0- (0.01,0) [0|100] "" XXX
+ SG_ VCMS_Discharge_Mode_DC_Maximum_Current_Limit : 152|8@1+ (1,0) [0|100] "" XXX
+ SG_ VCMS_Discharge_Mode_AC_Maximum_Current_Limit : 160|8@1+ (1,0) [0|100] "" XXX
+ SG_ ICCU_2025_Aux_Battery_Current : 175|16@0+ (0.01,0) [0|100] "" XXX
+ SG_ OBC_DC_Voltage : 183|16@0+ (0.1,0) [0|100] "" XXX
+ SG_ ICCU_2025_Aux_Battery_State_of_Charge : 184|8@1+ (1,0) [0|100] "" XXX
+ SG_ ICCU_2025_Aux_Battery_Voltage : 199|16@0+ (0.001,0) [0|100] "" XXX
+ SG_ ICCU_2025_Aux_Battery_Temperature : 215|16@0+ (0.5,0) [0|100] "" XXX
+ SG_ OBC_DC_Current_B : 231|16@0- (0.01,0) [0|100] "" XXX
+ SG_ OBC_Temperature_A : 240|8@1+ (1,-40) [0|100] "" XXX
+ SG_ OBC_Temperature_B : 248|8@1+ (1,-40) [0|100] "" XXX
+ SG_ OBC_AC_Input_Current_Sensor_A_Signal_Voltage : 327|16@0+ (0.01,0) [0|100] "" XXX
+ SG_ OBC_AC_Input_Current_Sensor_B_Signal_Voltage : 343|16@0+ (0.01,0) [0|100] "" XXX
+
+CM_ BO_ 1109 "Ambient light color control on 0x4AD. Sends 3x color frames + 3x commit (0002082000000000). Factory palette: 74 colors total (64 wheel + 10 preset). Strict (RGB, byte3) pair validation — invalid pairs are rejected. byte3 bit7 forces brightness to 0 if set.";
+CM_ SG_ 1109 byte3_palette_sector "byte3 bit structure: bit7=unused (forces 0 brightness if set), bit6=ack/echo flag, bits5:4=palette_type (00-11), bits3:0=sector (0-15). Only valid (RGB,byte3) pairs from factory palette accepted.";
+CM_ BO_ 1109_BRIGHTNESS_CTRL "Brightness control on 0x4AD with data 000208A0[level]000000. Sent as 3x frames in sequence. brightness_level: 0=off, 1-4=intermediate, 5=full. Level > 5 may cause issues. Separate from color control.";
+CM_ SG_ 54 CURRENT_GEAR "00=P 05=D 06=N 07=R";
+CM_ SG_ 55 FRONT_MOTOR_CLUTCH_STATUS "0x037 B3 bit0: 0=ENGAGED(0x10) 1=DISENGAGED(0x11). Transitions confirmed across 8 clutch events in MCAN recording.";
+CM_ SG_ 98 TRAC_CTRL_STATUS "02=ON 01=OFF";
+CM_ SG_ 98 TRAC_SABIL_ASSIST_STATUSS "02=ON 01=OFF";
+CM_ SG_ 100 AUTO_HOLD_STATUS "0=OFF 1=ON";
+CM_ SG_ 234 Driver_Torque_Sensor "Steering-rack driver torque sensor. 12-bit value at bytes 9-10 (0-idx 8-9) LE, centered on raw 2048 (=0 physical, with no driver input). Correlates r=-0.62 with the MDPS motor current PID (0x220101 to header 0x7D4) over the 2026-05-30 23:00 capture — when driver torque goes negative, motor current goes positive (assist direction). Scale/units unverified; raw +/-50..250 covers normal driving range. NOT the same as MDPS motor current (which is internal to the MDPS ECU and not broadcast on ECAN).";
+CM_ SG_ 551 DRIVE_MODE "ECO=02 NORMAL=01 SPORT=03 SNOW=06";
+CM_ BO_ 928 "TPMS broadcast on ECAN. Bytes 4-7 are tire pressures at 1 psi/LSB. Order is FR, FL, BR, BL (verified by 2026-05-30 capture against PID 0x22C00B with sun on left side -> left tires hotter; opposite of conventional FL/FR/BL/BR ordering). Bytes 0-2 are CRC+counter, byte 3 status. Temperature broadcast not yet identified on this bus.";
+CM_ BO_ 1960 "OBD-II response to PID 0x22C00B (TPMS read, header 0x7A0/response 0x7A8). Pressure scale 0.2 psi/LSB, temp -50 degC offset. Byte order is FR,FL,BR,BL (corrected 2026-05-30; previously labeled FL,FR,BL,BR was inverted per left-side-sun temperature observation).";
+VAL_ 54 CURRENT_GEAR 0 "PARK" 5 "DRIVE" 6 "NEUTRAL" 7 "REVERSE";
+VAL_ 55 FRONT_MOTOR_CLUTCH_STATUS 0 "ENGAGED" 1 "DISENGAGED";
+VAL_ 199 Battery_Preconditioning_0 64 "On" 0 "Off";
+VAL_ 199 Battery_Preconditioning_1 3 "On" 0 "Off";
+VAL_ 288 FRONT_MOTOR_DRIVE_MODE 0 "Eco" 16 "Sport";
+VAL_ 288 FRONT_MOTOR_SPORT_FLAG 0 "Eco" 1 "Sport";
+VAL_ 419 DRIVE_MODE 4 "ECO" 9 "NORMAL" 14 "SPORT" 9 "SNOW";
+VAL_ 463 steering_wheel_cruise_control_button_states 1 "CC SPEED PDL UP" 2 "CC SPEED PDL DWN" 3 "CC FOLLOW DST" 4 "CC SPEED PDL IN";
+VAL_ 497 PARK_BRAKE_SW_PULLED 1 "PUSHED" 0 "NOT PUSHED";
+VAL_ 497 PARK_BRAKE_SW_PUSHED 1 "PUSHED" 0 "NOT PUSHED";
+VAL_ 497 PARK_BRAKE_STATUS 40 "ENGAGED" 36 "DISENGAGED" 60 "CLOSING (ORDERED BY PARK BRAKE SW)" 56 "OPENING (ORDERED BY PARK BRAKE SW)" 48 "OPENING (ORDERED BY STALK)" 44 "CLOSING (ORDERED BY STALK)";
+VAL_ 551 DRIVE_MODE 2 "ECO" 1 "NORMAL" 3 "SPORT" 6 "SNOW";
+VAL_ 685 Battery_Precond_State 21 "On" 5 "Preparing" 1 "Off";
+VAL_ 1048 Steering_Wheel_Heating_State 1 "On" 0 "Off";
+VAL_ 1080 RearLeft_Seat_Heating_State 65 "High" 49 "Low" 17 "Off";
+VAL_ 1096 Steering_Wheel_Other_Button 64 "Mode_Pressed" 1 "Speak_Pressed" 4 "Phone_Pressed" 0 "None_Pressed";
+VAL_ 1096 Steering_Wheel_Star_Button 16 "Pressed" 0 "Not_Pressed";
+VAL_ 1107 RearRight_Seat_Heating_State 65 "High" 49 "Low" 17 "Off";
+VAL_ 1141 Passenger_Seat_Heating_State 70 "High" 62 "Medium" 54 "Low" 22 "Off";
+VAL_ 1174 Driver_Seat_Heating_State 70 "High" 62 "Medium" 54 "Low" 22 "Off";
