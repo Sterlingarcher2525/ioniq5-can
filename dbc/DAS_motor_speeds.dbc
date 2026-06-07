@@ -1,0 +1,16 @@
+VERSION ""
+
+NS_ :
+
+BS_:
+
+BU_: VCU DAS
+
+BO_ 470 VCU_MotorCmd: 8 VCU
+ SG_ rear_motor_speed : 16|16@1- (1,0) [0|65535] "" XXX
+
+BO_ 475 DAS_Feedback: 8 DAS
+ SG_ front_motor_speed : 16|16@1- (1,0) [0|65535] "" XXX
+
+CM_ SG_ 470 rear_motor_speed "Bytes 2-3, signed 16-bit LE (RPM). Tracks front_motor_speed when front motor CONNECTED (diff <100 RPM), diverges when DISCONNECTED (median diff ~2628 RPM in canlog3). Use |front-rear|>100 RPM as coarse disconnect indicator; Hall_Position in DAS_Feedback is definitive.";
+CM_ SG_ 475 front_motor_speed "Bytes 2-3, signed 16-bit LE (RPM). Ground-truth for DAS state: tracks rear_motor_speed when CONNECTED (diff <100 RPM), diverges when DISCONNECTED. CONNECTED median diff=0 RPM (>100 RPM: 0.1%); DISCONNECTED median diff=2628 RPM (>100 RPM: 82.3%); ACTUATING median diff=11 RPM.";
